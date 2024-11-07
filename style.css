@@ -1,0 +1,1238 @@
+/* Style umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    z-index: -1;
+}
+
+/* Style untuk h1 */
+h1 {
+    color: #df6000; /* Warna oranye yang elegan */
+    font-family: 'Playfair Display', serif; /* Sesuaikan dengan font yang diinginkan */
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Style untuk h2 */
+h2 {
+    color: #333; /* Tetap menggunakan warna sebelumnya */
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+/* Header dengan Latar Transparan */
+header {
+    background: rgba(0, 0, 0, 0.4); /* Warna hitam dengan transparansi 40% */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.company-name a {
+    color: inherit; /* Mengikuti warna dari elemen induk (h1) */
+    text-decoration: none; /* Sesuaikan jika ingin tetap tanpa underline */
+    font-family: inherit; /* Mengikuti font dari h1 */
+    font-size: inherit; /* Mengikuti ukuran font dari h1 */
+    font-weight: inherit; /* Mengikuti ketebalan font dari h1 */
+    text-transform: inherit;
+    letter-spacing: inherit;
+    margin-bottom: inherit;
+}
+
+.company-name a:hover {
+    color: #b58900;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Style Navigasi Header */
+nav ul li a {
+    color: #fff; /* Warna teks awal */
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+/* Efek Hover untuk Navigasi */
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Warna kotak gelap dengan transparansi */
+    color: #f0f0f0; /* Teks menjadi lebih terang */
+}
+
+
+/* Banner */
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Tombol Panah */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Section Info dengan Background */
+#info {
+    background-color: #f4f4f9;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Kontainer Utama Info */
+.info-container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* Gambar dalam Kotak */
+.info-image {
+    flex: 1;
+    background: #e0e0e0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ddd;
+}
+
+.info-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-image img:hover {
+    transform: scale(1.05); /* Efek Zoom Saat dihover */
+}
+
+/* Teks Konten Info */
+.info-content {
+    flex: 2;
+    padding: 30px;
+}
+
+.info-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* Team Section */
+.team-section {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-members {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+.team-member {
+    text-align: center;
+    opacity: 0.5;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.team-member img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+
+.team-member.focused img {
+    width: 200px;
+    height: 200px;
+}
+
+.team-member.focused {
+    opacity: 1;
+}
+
+.team-member.focused .member-info {
+    display: block;
+}
+
+.member-info {
+    display: none;
+}
+
+.member-info h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.member-info p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.team-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(79, 79, 79, 0.6);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.team-left {
+    left: 20px;
+}
+
+.team-right {
+    right: 20px;
+}
+
+.team-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #df6000;
+}
+
+
+
+
+/* Section Layanan */
+.services-section {
+    position: relative;
+    padding: 40px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+/* Title Style */
+.section-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Container Style */
+.services-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* Wrapper for Service Boxes */
+.service-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(250px * 24); /* Width to fit all boxes */
+}
+
+/* Each Service Box */
+.service-box {
+    min-width: 200px;
+    max-width: 200px;
+    height: 250px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-box img {
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+}
+
+.service-name {
+    font-size: 1em;
+    padding: 10px;
+    color: #333;
+}
+
+/* Anak Panah Navigasi */
+.nav-arrow-service {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 10;
+    border-radius: 50%;
+    opacity: 0.9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.nav-arrow-service:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+/* Tombol di Bagian Bawah Kanan Section Services */
+.services-button {
+    position: absolute;
+    bottom: 10px;
+    right: 250px;
+    background-color: #007bff; /* Warna biru elegan */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.services-button:hover {
+    background-color: #0056b3; /* Warna lebih gelap saat dihover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* Video Section */
+#video-section {
+    padding: 50px 0;
+    background: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.video-title {
+    color: #df6000;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-description {
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    text-align: center;
+}
+
+.video-description h3 {
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.video-description p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.video-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: #df6000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #ffffff;
+    color: #df6000;
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        padding: 0 10px;
+    }
+}
+
+
+
+
+
+
+/* Gallery Section */
+.gallery-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-images-wrapper {
+    overflow: hidden;
+    width: 80%;
+}
+
+.gallery-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.gallery-images img {
+    width: 300px;
+    height: 300px;
+    margin: 0 5px;
+    border-radius: 8px;
+}
+
+.gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(79, 79, 79, 0.6);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.gallery-left {
+    left: 50px;
+}
+
+.gallery-right {
+    right: 50px;
+}
+
+.gallery-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #df6000;
+}
+
+
+
+/* Map */
+/* Style untuk Card Map */
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.map-info {
+    flex: 1;
+    color: #333;
+}
+
+.map-info h3 {
+    font-size: 1.5rem;
+    color: #f76c6c;
+    margin-bottom: 10px;
+}
+
+.map-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.map-card {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.map-card iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+/* Testimoni Pelanggan */
+#testimoni {
+    padding: 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.testimonial-card {
+    position: relative;
+    background: linear-gradient(135deg, #333, #666);
+    border-radius: 12px;
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.google-maps-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.google-maps-icon:hover {
+    color: #df6000;
+}
+
+.card-content {
+    text-align: left;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.customer-info h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Styling untuk Rating Bintang */
+.testimonial-card .customer-info .rating i.fas.fa-star,
+.testimonial-card .customer-info .rating i.fas.fa-star-half-alt {
+    color: #ffd700; /* Warna kuning untuk bintang */
+}
+
+.review-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.review-photo {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .testimonial-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.collaborate-text {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.main-text {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 0 20px;
+    line-height: 1.4;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* Ganti dengan warna yang diinginkan */
+    color: #333; /* Ganti dengan warna teks yang diinginkan */
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 500ms;
+}
+
+.contact-button:hover {
+    background-color: #df6000; /* Warna latar belakang saat hover */
+    color: #ddd;
+}
+
+
+.contact-info {
+    font-size: 0.9em;
+    margin-top: 20px;
+    color: #bbb;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-link {
+    color: #fff;
+    font-size: 2.0em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #bbb;
+}
+
+/* Default for larger screens */
+@media (min-width: 701px) {
+    .header-content {
+        max-width: 1200px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    .company-logo {
+        width: 50px;
+    }
+
+    .company-name a {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .info-container {
+        flex-direction: row;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .info-image {
+        flex: 1;
+    }
+
+    .info-content {
+        flex: 2;
+        padding: 30px;
+    }
+
+    .info-content h2 {
+        font-size: 2rem;
+    }
+
+    .info-content p {
+        font-size: 1rem;
+    }
+
+    .team-section {
+        max-width: 900px;
+        padding: 30px;
+    }
+
+    .team-container {
+        gap: 30px;
+    }
+
+    .team-member img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-member.focused img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .team-arrow {
+        font-size: 2.5rem;
+        padding: 15px;
+    }
+
+    
+
+   
+
+}
+
+/* Responsiveness for slightly larger screens (601px - 700px) */
+@media (min-width: 601px) and (max-width: 700px) {
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+
+    .company-logo {
+        width: 45px;
+    }
+
+    .company-name a {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+
+    .info-container {
+        flex-direction: row;
+    }
+
+    .info-image {
+        flex: 1;
+    }
+
+    .info-content {
+        flex: 1.5;
+        padding: 30px;
+    }
+
+    .info-content h2 {
+        font-size: 2rem;
+    }
+
+    .info-content p {
+        font-size: 1rem;
+    }
+
+    .team-section {
+        padding: 25px;
+    }
+
+    .team-container {
+        gap: 25px;
+    }
+
+    .team-member img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .team-member.focused img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .team-arrow {
+        font-size: 1.8rem;
+        padding: 12px;
+    }
+
+    .services-section .section-title {
+        font-size: 2.2em;
+    }
+    .service-box {
+        min-width: 200px;
+        max-width: 200px;
+        height: 250px;
+    }
+    .service-name {
+        font-size: 1.2em;
+    }
+    .nav-arrow-service {
+        font-size: 2.5rem;
+        padding: 15px;
+    }
+
+
+}
+
+/* Responsiveness for medium-small screens (441px - 600px) */
+@media (min-width: 441px) and (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .company-logo {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+
+    .company-name a {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 0.95rem;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .info-image {
+        width: 100%;
+        border-right: none;
+        margin-bottom: 20px;
+    }
+
+    .info-content h2 {
+        font-size: 1.9rem;
+    }
+
+    .info-content p {
+        font-size: 0.95rem;
+    }
+
+    .team-section {
+        padding: 20px;
+    }
+
+    .team-container {
+        gap: 20px;
+    }
+
+    .team-member img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .team-member.focused img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .team-arrow {
+        font-size: 1.6rem;
+        padding: 10px;
+    }
+
+    .services-section .section-title {
+        font-size: 2em;
+    }
+    .service-box {
+        min-width: 180px;
+        max-width: 180px;
+        height: 230px;
+    }
+    .service-name {
+        font-size: 1.1em;
+    }
+    .nav-arrow-service {
+        font-size: 2.2rem;
+        padding: 14px;
+    }
+
+
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 440px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .company-logo {
+        width: 40px; /* Perkecil logo agar lebih pas */
+        margin-bottom: 10px;
+    }
+
+    h1.company-name {
+        font-size: 1.8rem; /* Sesuaikan ukuran font pada layar kecil */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .info-image {
+        width: 100%;
+        border-right: none;
+        margin-bottom: 15px;
+    }
+
+    .info-content {
+        padding: 25px;
+    }
+
+    .info-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .info-content p {
+        font-size: 0.9rem;
+    }
+
+    .team-section {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .team-member img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .team-member.focused img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .team-arrow {
+        font-size: 1.4rem;
+        padding: 8px;
+    }
+
+    .services-section .section-title {
+        font-size: 1.8em;
+    }
+    .service-box {
+        min-width: 160px;
+        max-width: 160px;
+        height: 220px;
+    }
+    .service-name {
+        font-size: 1em;
+    }
+    .nav-arrow-service {
+        font-size: 2rem;
+        padding: 12px;
+    }
+    .services-button {
+        bottom: 10px;
+        right: 40px;
+        font-size: 0.9em;
+    }
+
+
+}
+
+/* Responsiveness for very small screens (like 320px) */
+@media (max-width: 320px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+    }
+    h1.company-name {
+        font-size: 1.2rem; /* Ukuran lebih kecil untuk layar terkecil */
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .company-logo {
+        width: 30px; /* Ukuran lebih kecil untuk logo */
+        margin-bottom: 6px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+
+    nav ul li a {
+        padding: 5px 8px; /* Padding lebih kecil */
+        font-size: 0.85rem; /* Ukuran font lebih kecil */
+    }
+
+    .info-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .info-image {
+        width: 100%;
+        border-right: none;
+        margin-bottom: 10px;
+    }
+
+    .info-content {
+        padding: 20px;
+    }
+
+    .info-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-content p {
+        font-size: 0.85rem;
+    }
+
+    .team-section {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .team-member img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .team-member.focused img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .team-arrow {
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+
+    .services-section .section-title {
+        font-size: 1.5em;
+    }
+    .service-box {
+        min-width: 150px;
+        max-width: 150px;
+        height: 200px;
+    }
+    .service-name {
+        font-size: 0.9em;
+    }
+    .nav-arrow-service {
+        font-size: 2rem;
+        padding: 10px;
+    }
+    .services-button {
+        bottom: 5px;
+        right: 20px;
+        font-size: 0.8em;
+    }
+
+
+}

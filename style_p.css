@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    z-index: -1;
+}
+
+/* Style untuk h1 */
+h1 {
+    color: #df6000; /* Warna oranye yang elegan */
+    font-family: 'Playfair Display', serif; /* Sesuaikan dengan font yang diinginkan */
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Style untuk h2 */
+h2 {
+    color: #333; /* Tetap menggunakan warna sebelumnya */
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Header dengan Latar Transparan */
+header {
+    background: rgba(0, 0, 0, 0.4); /* Warna hitam dengan transparansi 40% */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.company-name a {
+    color: inherit; /* Mengikuti warna dari elemen induk (h1) */
+    text-decoration: none; /* Sesuaikan jika ingin tetap tanpa underline */
+    font-family: inherit; /* Mengikuti font dari h1 */
+    font-size: inherit; /* Mengikuti ukuran font dari h1 */
+    font-weight: inherit; /* Mengikuti ketebalan font dari h1 */
+    text-transform: inherit;
+    letter-spacing: inherit;
+    margin-bottom: inherit;
+}
+
+.company-name a:hover {
+    color: #b58900;
+}
+
+
+
+
+/* Style khusus untuk section service-detail */
+.service-detail {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Set dua kolom */
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e3e3e3, #8097be);
+    color: #333;
+}
+
+/* Style tiap item layanan di dalam service-detail */
+.service-detail .service-item {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background: linear-gradient(135deg, #ffffff, #dfe7f3);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.service-detail .service-item:hover {
+    transform: scale(1.02);
+}
+
+.service-detail .service-item img {
+    width: 50%; /* Buat gambar menempati setengah dari item */
+    height: auto;
+    object-fit: cover;
+    border-right: 1px solid #d0d0d0;
+}
+
+.service-detail .service-text {
+    padding: 20px;
+    flex: 1;
+    min-width: 0; /* Menjaga teks tidak keluar dari item */
+    overflow: hidden;
+}
+
+/* Style title dan deskripsi */
+.service-detail .service-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    word-wrap: break-word; /* Memastikan title terbungkus */
+}
+
+.service-detail .service-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+    word-wrap: break-word; /* Memastikan deskripsi terbungkus */
+}
+
+
+/* Footer */
+.footer {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.collaborate-text {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.main-text {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 0 20px;
+    line-height: 1.4;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* Ganti dengan warna yang diinginkan */
+    color: #333; /* Ganti dengan warna teks yang diinginkan */
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #df6000; /* Warna latar belakang saat hover */
+    color: #fff;
+}
+
+
+.contact-info {
+    font-size: 0.9em;
+    margin-top: 20px;
+    color: #bbb;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-link {
+    color: #fff;
+    font-size: 2.0em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #bbb;
+}
+
+
+/* Responsive di bawah 320px */
+@media (max-width: 319px) {
+    .service-detail .service-item {
+        flex-direction: column; /* Atur arah flex menjadi kolom */
+        align-items: center; /* Pastikan elemen berpusat */
+        text-align: center; /* Selaraskan teks di tengah */
+    }
+    
+    .service-detail .service-item img {
+        width: 100%; /* Gambar memenuhi lebar item */
+        border-right: none; /* Hilangkan border di kanan gambar */
+        border-bottom: 1px solid #d0d0d0; /* Tambahkan border di bawah gambar */
+        border-radius: 15px 15px 0 0; /* Membuat sudut gambar terlihat halus di atas */
+    }
+
+    .service-detail .service-text {
+        padding: 15px 20px; /* Sesuaikan padding */
+        text-align: center; /* Teks berada di tengah */
+    }
+    
+    .service-detail .service-title {
+        font-size: 1.6rem; /* Atur ukuran font title agar tetap terlihat */
+    }
+    
+    .service-detail .service-description {
+        font-size: 0.95rem; /* Sedikit kecilkan ukuran font deskripsi */
+        color: #555; /* Warna teks yang elegan */
+    }
+}
+
+/* Responsive 320px - 440px */
+@media (min-width: 320px) and (max-width: 440px) {
+    .service-detail .service-item {
+        flex-direction: column; /* Atur arah flex menjadi kolom */
+        align-items: center; /* Pastikan elemen berpusat */
+        text-align: center; /* Selaraskan teks di tengah */
+    }
+    
+    .service-detail .service-item img {
+        width: 100%; /* Gambar memenuhi lebar item */
+        border-right: none; /* Hilangkan border di kanan gambar */
+        border-bottom: 1px solid #d0d0d0; /* Tambahkan border di bawah gambar */
+        border-radius: 15px 15px 0 0; /* Membuat sudut gambar terlihat halus di atas */
+    }
+
+    .service-detail .service-text {
+        padding: 15px 20px; /* Sesuaikan padding */
+        text-align: center; /* Teks berada di tengah */
+    }
+    
+    .service-detail .service-title {
+        font-size: 1.6rem; /* Atur ukuran font title agar tetap terlihat */
+    }
+    
+    .service-detail .service-description {
+        font-size: 0.95rem; /* Sedikit kecilkan ukuran font deskripsi */
+        color: #555; /* Warna teks yang elegan */
+    }
+}
+
+/* Responsive 441px - 600px */
+@media (min-width: 441px) and (max-width: 600px) {
+    .service-detail .service-item {
+        flex-direction: column; /* Atur arah flex menjadi kolom */
+        align-items: center; /* Pastikan elemen berpusat */
+        text-align: center; /* Selaraskan teks di tengah */
+    }
+    
+    .service-detail .service-item img {
+        width: 100%; /* Gambar memenuhi lebar item */
+        border-right: none; /* Hilangkan border di kanan gambar */
+        border-bottom: 1px solid #d0d0d0; /* Tambahkan border di bawah gambar */
+        border-radius: 15px 15px 0 0; /* Membuat sudut gambar terlihat halus di atas */
+    }
+
+    .service-detail .service-text {
+        padding: 15px 20px; /* Sesuaikan padding */
+        text-align: center; /* Teks berada di tengah */
+    }
+    
+    .service-detail .service-title {
+        font-size: 1.6rem; /* Atur ukuran font title agar tetap terlihat */
+    }
+    
+    .service-detail .service-description {
+        font-size: 0.95rem; /* Sedikit kecilkan ukuran font deskripsi */
+        color: #555; /* Warna teks yang elegan */
+    }
+}
+
+/* Responsive 601px - 700px */
+@media (min-width: 601px) and (max-width: 700px) {
+    .service-detail .service-item {
+        flex-direction: column; /* Atur arah flex menjadi kolom */
+        align-items: center; /* Pastikan elemen berpusat */
+        text-align: center; /* Selaraskan teks di tengah */
+    }
+    
+    .service-detail .service-item img {
+        width: 100%; /* Gambar memenuhi lebar item */
+        border-right: none; /* Hilangkan border di kanan gambar */
+        border-bottom: 1px solid #d0d0d0; /* Tambahkan border di bawah gambar */
+        border-radius: 15px 15px 0 0; /* Membuat sudut gambar terlihat halus di atas */
+    }
+
+    .service-detail .service-text {
+        padding: 15px 20px; /* Sesuaikan padding */
+        text-align: center; /* Teks berada di tengah */
+    }
+    
+    .service-detail .service-title {
+        font-size: 1.6rem; /* Atur ukuran font title agar tetap terlihat */
+    }
+    
+    .service-detail .service-description {
+        font-size: 0.95rem; /* Sedikit kecilkan ukuran font deskripsi */
+        color: #555; /* Warna teks yang elegan */
+    }
+}
+
+
